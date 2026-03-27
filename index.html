@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lovely Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <audio id="bgMusic" loop>
+  <source src="mp3.mp3" type="audio/mpeg">
+</audio>
+
+<body class="preload">
+    <!-- Enhanced animated background -->
+    <div class="bubbles" id="bubbles"></div>
+    <div class="bg-hearts" id="bgHearts"></div>
+
+    <div class="container">
+        <!-- Calculator screen -->
+        <div class="calculator-screen" id="calculatorScreen">
+            <div class="input-avatar-row">
+                <div class="avatar-square">
+                    <img id="avatarImg" src="kmeng3.jpg" alt="Avatar" style="display:block;">
+                </div>
+                <div class="input-and-keypad">
+                    <div class="calculator-title">Enter your birth date</div>
+                    <input type="password" class="display" id="display" placeholder="••••••••" maxlength="8">
+                    
+                    <div class="buttons">
+                        <button class="btn btn-number" onclick="appendToDisplay('1')">1</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('2')">2</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('3')">3</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('4')">4</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('5')">5</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('6')">6</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('7')">7</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('8')">8</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('9')">9</button>
+                        <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+                        <button class="btn btn-number" onclick="appendToDisplay('0')">0</button>
+                        <button class="btn btn-enter" onclick="checkPassword()">✓</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday screen outside container -->
+    <div class="birthday-screen" id="birthdayScreen" style="display:none;">
+        
+        <!-- Wishes page -->
+        <div class="wishes-page" id="wishesPage">
+            <div class="main-title">
+                <h1 class="rainbow-text">💗HAPPY BIRTHDAY💗</h1>
+                <div class="subtitle">Chhung Nysoneasa</div>
+            </div>
+            
+            <!-- 3D Card -->
+            <div class="birthday-card-section">
+                <div class="card-3d">
+                    <div class="card-imgBox">
+                        <div class="card-bark"></div>
+                        <img src="pic1.jpg" alt="Birthday">
+                    </div>
+                    
+                    <div class="card-details">
+                        <h4>HAPPY BIRTHDAY</h4>
+                        <p>Wishing you a wonderful birthday,</p>
+                        <p>May you study well and become even more beautiful</p>
+                        <p>Hope you find your love soon...</p>
+                        <p>Wish you everything you dream of.</p>
+                        <p>Stay happy and joyful always.</p>
+                        <p>Stay cute and lovely forever.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="continue-btn" onclick="showLetter()">
+                Open your gift 🎁
+            </button>
+        </div>
+    </div>
+
+    <!-- Heart gallery -->
+    <div id="heartGallery" class="heart-gallery" style="display:none;"></div>
+
+    <script src="lang.js"></script>
+</body>
+</html>
